@@ -1,3 +1,5 @@
+#NOTE: I will be moving this to a repo named Ftp.WebJobs.Extensions ...
+
 # Ftp.Web.Extensions
 Web job extension for sending files with ftp
 
