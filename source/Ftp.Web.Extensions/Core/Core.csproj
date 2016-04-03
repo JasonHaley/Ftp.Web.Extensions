@@ -71,6 +71,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Spatial, Version=5.6.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Spatial.5.6.2\lib\net40\System.Spatial.dll</HintPath>
@@ -88,12 +89,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bindings\FtpAttributeBindingProvider.cs" />
+    <Compile Include="Bindings\FtpBinding.cs" />
+    <Compile Include="Config\FtpConfiguration.cs" />
+    <Compile Include="Config\FtpJobHostConfigurationExtensions.cs" />
+    <Compile Include="Framework\AmbientSettingsProvider.cs" />
+    <Compile Include="Framework\ConfigurationUtility.cs" />
+    <Compile Include="FtpAttribute.cs" />
+    <Compile Include="FtpClient.cs" />
+    <Compile Include="FtpRequestInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
